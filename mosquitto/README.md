@@ -19,9 +19,9 @@ docker run -d -p8883:8883 mosquitto
 ```
 or iteractive mode
 ```
-docker run -it -p8883:8883 mosquitto
+docker run --rm -it -p8883:8883 mosquitto
 ```
-Connect broker on port 8883 using:
+Connect broker on localhost ``port 8883`` using:
 ```
 mosquitto_ca.crt
 mosquitto_client.key
