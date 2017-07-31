@@ -29,6 +29,10 @@ mosquitto_client.crt
 username: mosquitto
 password: mosquitto
 ```
+You can try to use following openssl command to test connection
+```
+openssl s_client -connect localhost:8883 -cert mosquitto_client.crt -key mosquitto_client.key -CAfile mosquitto_ca.crt
+```
 
 ### Customization
 - Put all your custom config files into ``conf.d`` directory.
